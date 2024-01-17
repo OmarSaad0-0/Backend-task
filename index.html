@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Platform </a>
+        <!-- Toggler -->
+        <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="./View/Users.php">View Users</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+    <div id="AddUserForm">
+
+        <div class="container mt-5 ">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <h2>Add New User Information Form</h2>
+                    <form class="form-control" action="View/AddUsers.php" method="Post" id="userForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input class="form-control" type="text" id="Name" name="Name" required>
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input class="form-control" type="email" id="Email" name="Email" required>
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number:</label>
+                            <input class="form-control" type="tel" id="phone" name="phone" pattern="[0-9]{10,}"
+                                required>
+                        </div>
+
+                        <br>
+                        <div class="mb-3">
+                            <label for="proficiency" class="form-label">Proficiency:</label>
+                            <input class="form-control" type="text" id="proficiency" name="proficiency" required>
+                        </div>
+
+                        <br>
+                        <input class="btn btn-dark d-block mx-auto" type="submit" name="submit" id="submit">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<!--<button onclick="window.location.href='View/Users.php'">Go to Users</button>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
